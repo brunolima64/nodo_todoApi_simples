@@ -1,9 +1,3 @@
-# Base limpa de API em Node
-
-Este repositório serve exclusivamente para oferecer uma base rápida para criação de APIs em Node.
-
-Ele possui apenas a configuração básica do Express com Typescript e o primeiro router.
-
 ## Instalação
 Você pode clonar o repositório e rodar:
 ```bash
