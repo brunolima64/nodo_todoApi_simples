@@ -5,24 +5,23 @@ export const getAllTodos = async () => {
     return await prisma.todo.findMany({});
 }
 
-export const addTodo = async (title: string, done: boolean) => {
+export const addTodo = async (title: string) => {
 
-    if(title && title.length >= 2) {
+    if (title && title.length >= 2) {
         const newTodo = await prisma.todo.create({
             data: {
-                title: title,
-                done: false
+                title: title
             }
         })
 
         return newTodo;
-    } 
-    
+    }
+
 }
 
 export const updateTitleTodo = async (id: number, title: string, done: boolean) => {
 
-    if(title && title.length >= 2) {
+    if (title && title.length >= 2) {
         return await prisma.todo.update({
             where: { id },
             data: { title: title }
