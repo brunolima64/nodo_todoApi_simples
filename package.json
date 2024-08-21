@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "tsx watch src/server.ts",
-    "vercel-build": "npx prisma migrate deploy"
+    "vercel-build": "npx prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^5.17.0",
